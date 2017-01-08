@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Juliana & Aecio (http://github.com/aecio/julianaeaecio)
+ * Copyright 2017 - 2017 Aécio Santos
+ * Licensed under MIT (https://github.com/aecio/julianaeaecio/blob/gh-pages/LICENSE)
  */
 
 // jQuery to collapse the navbar on scroll
@@ -31,6 +31,8 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
+
+/**
 
 // Google Maps Scripts
 var map = null;
@@ -183,3 +185,5 @@ function init() {
         icon: image
     });
 }
+
+*/
