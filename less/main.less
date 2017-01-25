@@ -57,6 +57,36 @@ a {
     font-weight: 400;
 }
 
+.bold {
+  font-weight: 800;
+}
+
+.gray-bg {
+  background-color: #eee;
+  a.btn-default {
+    &:hover {
+      color: #ddd;
+    }
+  }
+}
+
+.venue-table {
+  span {
+    font-size: 20px;
+  }
+  .venue-row {
+    margin: 20px 0;
+    @media(min-width:768px) {
+      text-align: left;
+      div {
+        &:first-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid fade(white, 30%);
@@ -257,7 +287,8 @@ a {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .savethedate-section {
@@ -338,7 +369,7 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0 10px;
+    padding: 50px 0 25px;
     p {
         margin: 0;
         font-size: 14px;
