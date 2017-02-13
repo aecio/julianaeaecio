@@ -58,6 +58,19 @@ gulp.task('copy', function() {
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
         .pipe(gulp.dest('vendor/jquery'))
 
+    gulp.src(['node_modules/photoset-grid/**',
+              '!node_modules/photoset-grid/**/*.map',
+              '!node_modules/photoset-grid/.npmignore',
+              '!node_modules/photoset-grid/*.txt',
+              '!node_modules/photoset-grid/*.markdown',
+              '!node_modules/photoset-grid/*.json',
+              '!node_modules/photoset-grid/Gruntfile.js',
+              '!node_modules/photoset-grid/*.html',
+              '!node_modules/photoset-grid/css/scss/main.css',
+              '!node_modules/photoset-grid/css/scss/**',
+              '!node_modules/photoset-grid/img/demo/**'])
+        .pipe(gulp.dest('vendor/photoset-grid'))
+
     gulp.src([
             'node_modules/font-awesome/**',
             '!node_modules/font-awesome/**/*.map',
