@@ -86,17 +86,21 @@ a:focus {
 .gray-bg a.btn-default:hover {
   color: #ddd;
 }
-.venue-table span {
+.info-table span {
   font-size: 20px;
 }
-.venue-table .venue-row {
+.info-table .info-heading h2,
+.info-table .info-heading h3 {
+  margin-bottom: 5px;
+}
+.info-table .info-row {
   margin: 20px 0;
 }
 @media (min-width: 768px) {
-  .venue-table .venue-row {
+  .info-table .info-row {
     text-align: left;
   }
-  .venue-table .venue-row div:first-child {
+  .info-table .info-row div:first-child {
     text-align: right;
   }
 }
